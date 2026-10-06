@@ -76,7 +76,7 @@ Please follow the steps carefully and read each command before executing.
 aws s3api create-bucket --bucket kops-abhi-storage --region us-east-1
 ```
 
-### Create the cluster 
+### Create the cluster and if you have domain name of your company then paste instead local(demok8scluster.k8s.local)
 
 ```
 kops create cluster --name=demok8scluster.k8s.local --state=s3://kops-abhi-storage --zones=us-east-1a --node-count=1 --node-size=t2.micro --master-size=t2.micro  --master-volume-size=8 --node-volume-size=8
